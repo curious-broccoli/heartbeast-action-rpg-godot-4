@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://q1b05fregyyo"]
+
+[ext_resource type="Texture2D" uid="uid://i4xilqvwus6x" path="res://Action RPG Resources/World/Bush.png" id="1_m07gj"]
+[ext_resource type="PackedScene" uid="uid://cvvgima4arab6" path="res://Player/player.tscn" id="2_1yi06"]
+[ext_resource type="Texture2D" uid="uid://bvf2d83feh8tr" path="res://Action RPG Resources/Player/Player.png" id="3_3drei"]
+[ext_resource type="Script" path="res://Player/player.gd" id="3_vupr0"]
+
+[node name="World" type="Node2D"]
+
+[node name="Bush" type="Sprite2D" parent="."]
+position = Vector2(57, 105)
+texture = ExtResource("1_m07gj")
+
+[node name="Player" parent="." instance=ExtResource("2_1yi06")]
+position = Vector2(42, 37)
+script = ExtResource("3_vupr0")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("3_3drei")
+hframes = 60
