@@ -1,6 +1,6 @@
 extends Node2D
 
-var grassEffect: PackedScene = preload("res://Effects/grass_effect.tscn")
+const grassEffect: PackedScene = preload("res://Effects/grass_effect.tscn")
 
 func create_grass_effect():
     var grass_effect = grassEffect.instantiate()

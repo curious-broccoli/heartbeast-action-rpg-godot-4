@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://odrdvemquhvn"]
+[gd_scene load_steps=4 format=3 uid="uid://odrdvemquhvn"]
 
+[ext_resource type="Texture2D" uid="uid://dvwtq0be8aq06" path="res://Action RPG Resources/Shadows/LargeShadow.png" id="1_imlg6"]
 [ext_resource type="Texture2D" uid="uid://i4xilqvwus6x" path="res://Action RPG Resources/World/Bush.png" id="1_ly5xy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_36n2r"]
@@ -8,6 +9,9 @@ height = 28.0
 
 [node name="Bush" type="StaticBody2D"]
 metadata/_edit_group_ = true
+
+[node name="Shadow" type="Sprite2D" parent="."]
+texture = ExtResource("1_imlg6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -4)
